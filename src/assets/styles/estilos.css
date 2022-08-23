@@ -96,3 +96,22 @@ span {
   font-size: 1.4rem;
   top: 0.2rem;
 }
+.card__btn {
+  /* padding: 2rem; */
+}
+
+.like__un {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+.like-contenx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.flex-direc {
+  display: flex;
+  gap: 1rem;
+}
