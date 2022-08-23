@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
 
 function App() {
+  const card1 = [
+    {
+      title: "Post One",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti modi facere fuga vel unde laborum id, facilis soluta dolor?",
+      read: "7",
+      views: "7152",
+      comments: "21",
+      img: "https://images.unsplash.com/photo-1604537466573-5e94508fd243?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8cGFpc2FqZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
+    },
+    {
+      title: "Post One",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti modi facere fuga vel unde laborum id, facilis soluta dolor?",
+      read: "8",
+      views: "7152",
+      comments: "21",
+    },
+    {
+      title: "Post One",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deleniti modi facere fuga vel unde laborum id, facilis soluta dolor?",
+      read: "10",
+      views: "7152",
+      comments: "21",
+      img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="contenedor__card">
+        {card1.map((card1, index) => (
+          <Card key={index} cards={card1} />
+        ))}
+      </div>
     </div>
   );
 }
