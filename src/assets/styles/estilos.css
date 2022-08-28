@@ -14,11 +14,29 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
-  background-color: #1d1d1d;
+  background-color: f6f6f6;
 }
 
 a {
   text-decoration: none;
+}
+.btn {
+  background-color: #8cbc00;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.4rem;
+  transition: background-color 0.3s ease-out;
+  text-align: center;
+  border: none;
+}
+.btn:hover {
+  background-color: #769c02;
+  cursor: pointer;
+}
+
+.color-fondo {
+  background-color: #1d1d1d;
 }
 .container {
   max-width: 120rem;
@@ -39,7 +57,6 @@ img {
   height: 100%;
   border-radius: 0.8rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-
   cursor: pointer;
   background-color: #fff;
 }
@@ -119,4 +136,48 @@ span {
 .flex-direc {
   display: flex;
   gap: 1rem;
+}
+.contenedor__api {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 400px) {
+  .contenedor__api {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .contenedor__api {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .contenedor__api {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card__name {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.container_one {
+  max-width: 34rem;
+  margin: 2rem auto;
+}
+.card_one {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.card__alias {
+  text-align: center;
 }
